@@ -9,14 +9,9 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    /* PILIHAN 1: Latar Belakang dengan Corak Halus */
-    background-color: #f4f7f6; /* Warna asas */
-    
-    /* Corak Geometri Halus (CSS Radial Gradient Pattern) */
+    background-color: #f4f7f6;
     background-image: radial-gradient(#d1d8e0 1px, transparent 1px);
-    background-size: 20px 20px; /* Jarak antara titik */
-    
+    background-size: 20px 20px;
     color: #333;
     line-height: 1.6;
 }
@@ -85,7 +80,7 @@ header {
 }
 
 /* =========================================
-   3. HERO SLIDER (Laman Utama)
+   3. HERO SLIDER
    ========================================= */
 .hero-container {
     position: relative;
@@ -165,7 +160,6 @@ header {
     padding: 3rem 2rem;
     text-align: center;
     margin-bottom: 3rem;
-    /* Hero Pattern */
     background-image: linear-gradient(#1e3c72, #1e3c72), radial-gradient(#ffffff 1px, transparent 1px);
     background-size: cover, 30px 30px;
     background-blend-mode: overlay;
@@ -184,9 +178,8 @@ header {
 }
 
 /* =========================================
-   5. GAYA KHAS ABOUT US (Grid & Kad)
+   5. GRID & KAD (About Us)
    ========================================= */
-/* Grid 2 Lajur */
 .about-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -194,7 +187,6 @@ header {
     margin-bottom: 40px;
 }
 
-/* Reka Bentuk Kad About Us */
 .about-card {
     background: white;
     padding: 30px;
@@ -204,7 +196,6 @@ header {
     height: 100%;
 }
 
-/* Tajuk Kad */
 .about-card h3 {
     color: #1e3c72;
     margin-bottom: 20px;
@@ -214,7 +205,6 @@ header {
     border-left: 5px solid #ffd700;
 }
 
-/* Senarai (List) */
 .about-card ul { list-style: none; padding-left: 0; }
 .about-card ul li {
     position: relative;
@@ -230,7 +220,6 @@ header {
     left: 0;
 }
 
-/* Grid 3 Lajur (Fakta) */
 .facts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -262,19 +251,17 @@ header {
 }
 
 /* =========================================
-   6. GAYA HUBUNGI KAMI & LAIN-LAIN
+   6. CONTACT & LAIN-LAIN
    ========================================= */
 .section-header { text-align: center; margin: 40px 0 20px; }
 .header-line { width: 60px; height: 4px; background-color: #ffd700; margin: 10px auto; border-radius: 2px; }
 
-/* Grid Contact */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-/* Kad Standard */
 .card {
     background: white;
     padding: 30px;
@@ -283,11 +270,9 @@ header {
 }
 .info-card, .form-card { border-top: 4px solid #1e3c72; }
 
-/* Info Items */
 .info-item { display: flex; align-items: flex-start; margin-bottom: 20px; color: #444; }
 .info-item i { color: #1e3c72; font-size: 1.2rem; width: 30px; margin-top: 3px; }
 
-/* Butang & Form */
 .btn-yellow {
     display: block; background-color: #ffd700; color: #000; text-align: center;
     padding: 12px; border-radius: 5px; text-decoration: none; font-weight: 700; margin: 25px 0; border: none;
@@ -319,7 +304,6 @@ form input:focus { border-color: #1e3c72; outline: none; }
 .flip-card-back h3 { color: #ffd700; margin-bottom: 10px; }
 .btn-small { padding: 8px 20px; background: #ffd700; color: #1e3c72; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9rem; }
 
-/* Table Activities */
 .table-container { overflow-x: auto; margin-bottom: 3rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
 table.schedule { width: 100%; border-collapse: collapse; background: white; min-width: 600px; }
 .schedule th { background: #1e3c72; color: white; padding: 15px; text-align: left; }
@@ -354,7 +338,6 @@ footer {
     .nav-menu.active { display: flex; }
     .nav-menu li { margin: 15px 0; }
     
-    /* Layout Mobile */
     .contact-grid, .about-grid, .facts-grid {
         grid-template-columns: 1fr;
     }
@@ -363,16 +346,14 @@ footer {
 }
 
 /* =========================================
-   10. GAYA KHAS HALAMAN PROFIL (ASSIGNMENT COVER)
+   10. GAYA KHAS HALAMAN PROFIL
    ========================================= */
-/* Container Utama */
 .profile-main {
     display: flex;
     justify-content: center;
     padding: 60px 20px;
 }
 
-/* Kad Profil Utama */
 .profile-card {
     background: white;
     width: 100%;
@@ -384,7 +365,6 @@ footer {
     position: relative;
 }
 
-/* Header Profil */
 .profile-header {
     text-align: center;
     padding: 35px 30px 15px;
@@ -408,7 +388,6 @@ footer {
     font-weight: 500;
 }
 
-/* Gambar Profil */
 .profile-img {
     width: 150px;
     height: 150px;
@@ -420,7 +399,6 @@ footer {
 }
 .profile-img:hover { transform: scale(1.05); }
 
-/* Jadual Maklumat */
 .profile-table {
     width: 100%;
     border-collapse: collapse;
@@ -436,7 +414,6 @@ footer {
 
 .profile-table tr:last-child td { border-bottom: none; }
 
-/* Lajur Label */
 .label-col {
     width: 35%;
     font-weight: 600;
@@ -446,17 +423,14 @@ footer {
     background-color: #fafafa;
 }
 
-/* Lajur Isi */
 .value-col { font-weight: 500; color: #222; }
 
-/* Teks Penting */
 .highlight-text {
     color: #1e3c72;
     font-weight: 800;
     font-size: 1rem;
 }
 
-/* Footer Kad */
 .card-footer {
     background: #f8f9fa;
     padding: 25px;
@@ -464,7 +438,6 @@ footer {
     border-top: 1px solid #eee;
 }
 
-/* Responsif untuk Profil */
 @media (max-width: 600px) {
     .label-col {
         width: 100%; text-align: left; display: block; padding-bottom: 5px; background: none;
