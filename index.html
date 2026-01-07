@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masjid Ar Rahimah Desa Pandan</title>
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +12,6 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <!-- Ensure logo.jpg exists or use a placeholder -->
                 <img src="logo.jpg" alt="Logo" class="logo-img">
                 <div>
                     <h1>Masjid Ar Rahimah</h1>
@@ -28,17 +25,15 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="activities.html">Activities</a></li>
-				<li><a href="donation.html">Donation</a></li>
+                <li><a href="donation.html">Donation</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="aboutme.html">Student Info</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Slider (3 Slides) -->
     <div class="hero-container">
         
-        <!-- Slide 1 -->
         <div class="mySlides fade" style="background-image: url('kuliah.jpg'); display: block;">
             <div class="overlay"></div>
             <div class="text-content">
@@ -48,7 +43,6 @@
             </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="mySlides fade" style="background-image: url('sekolah.WEBP'); display: none;">
             <div class="overlay"></div>
             <div class="text-content">
@@ -58,27 +52,23 @@
             </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="mySlides fade" style="background-image: url('khairat.WEBP'); display: none;">
             <div class="overlay"></div>
             <div class="text-content">
                 <h2>Caring<br>Community</h2>
                 <p>Helping the Asnaf (needy) together and strengthening neighborhood bonds.</p>
-                <a href="contact.html" class="btn">Donate Now</a>
+                <a href="donation.html" class="btn">Donate Now</a>
             </div>
         </div>
         
-        <!-- Slider Navigation -->
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
 
-    <!-- Announcements Section (Flip Cards) -->
     <div class="announcements">
         <h2 class="section-title">Latest News & Programs</h2>
         <div class="announce-grid">
             
-            <!-- Card 1: Prayer Schedule -->
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -89,13 +79,11 @@
                     <div class="flip-card-back">
                         <h3>WPKL Daily Prayer Schedule</h3>
                         <p>Join the daily congregational prayers at the mosque.</p>
-                        <!-- Added target="_blank" to open in new tab -->
                         <a href="Jadual_Solat.pdf" class="btn-small" target="_blank">View Schedule</a>
                     </div>
                 </div> 
             </div> 
 
-            <!-- Card 2: Qiamullail -->
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -111,7 +99,6 @@
                 </div>
             </div>
 
-            <!-- Card 3: Welfare/Donation -->
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -132,9 +119,13 @@
 
     <footer>
         <div class="social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/p/Masjid-Ar-Rahimah-Kg-Pandan-100066891233331/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            
+            <a href="http://www.youtube.com/@masjidarrahimahkgpandan9311" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
         </div>
         <p>&copy; 2026 Masjid Ar Rahimah Desa Pandan. All Rights Reserved.</p>
         <div class="footer-bottom">
@@ -142,50 +133,40 @@
         </div>
     </footer>
 
-    <!-- JavaScript Script for Auto Slider Function -->
     <script>
-        // 1. Mobile Menu Toggle
         function toggleMenu() {
             document.getElementById("navMenu").classList.toggle("active");
         }
 
-        // 2. Image Slider Logic
         let slideIndex = 1;
-        let slideInterval; // Variable to store auto-slide timer
+        let slideInterval;
 
-        // Start slider when page loads
         showSlides(slideIndex);
         startAutoSlide(); 
 
-        // Function when Next/Prev button is clicked
         function plusSlides(n) {
-            clearInterval(slideInterval); // Reset timer to prevent clash with manual click
+            clearInterval(slideInterval);
             showSlides(slideIndex += n);
-            startAutoSlide(); // Restart timer after click
+            startAutoSlide();
         }
 
-        // Auto Slide Function (Moves every 5 seconds)
         function startAutoSlide() {
             slideInterval = setInterval(function() {
                 showSlides(slideIndex += 1);
-            }, 5000); // 5000ms = 5 seconds
+            }, 5000);
         }
 
-        // Main Display Function
         function showSlides(n) {
             let i;
             let slides = document.getElementsByClassName("mySlides");
             
-            // Loop logic if reaches end
             if (n > slides.length) {slideIndex = 1}    
             if (n < 1) {slideIndex = slides.length}
             
-            // Hide all slides first
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";  
             }
             
-            // Display only the current slide
             slides[slideIndex-1].style.display = "block";  
         }
     </script>
