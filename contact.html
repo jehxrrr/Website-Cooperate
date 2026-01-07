@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Masjid Ar Rahimah</title>
-    <!-- Link to Font Awesome & CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- NAVIGATION -->
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -27,24 +25,21 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="activities.html">Activities</a></li>
-				<li><a href="donation.html">Donation</a></li>
+                <li><a href="donation.html">Donation</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="aboutme.html">Student Info</a></li> 
             </ul>
         </nav>
     </header>
 
-    <!-- SECTION HEADER -->
     <div class="section-header">
         <h2>Contact Information</h2>
         <div class="header-line"></div>
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="wrapper">
         <div class="contact-grid">
             
-            <!-- LEFT CARD: OFFICE DETAILS -->
             <div class="card info-card">
                 <h3>Mosque Office Details</h3>
                 
@@ -68,7 +63,6 @@
                     <p>Sunday – Thursday (9:00 AM – 5:00 PM)</p>
                 </div>
 
-                <!-- Waze/Google Maps Link -->
                 <a href="https://maps.google.com" target="_blank" class="btn-yellow">
                     <i class="fas fa-location-arrow"></i> Open in Waze / Google Maps
                 </a>
@@ -78,11 +72,9 @@
                 </div>
             </div>
 
-            <!-- RIGHT CARD: FEEDBACK FORM (GOOGLE FORMS) -->
             <div class="card form-card">
                 <h3>Feedback & Complaint Form</h3>
                 
-                <!-- Target hidden_iframe to prevent page reload -->
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                 
                 <form id="feedbackForm" 
@@ -103,7 +95,6 @@
                     <label for="message">Your Message</label>
                     <textarea id="message" name="entry.28544276" placeholder="Write your message here..." required></textarea>
 
-                    <!-- Button class set to btn-blue to match CSS -->
                     <button type="submit" class="btn-blue">
                         <i class="fas fa-paper-plane"></i> Send Feedback
                     </button>
@@ -116,12 +107,15 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer>
         <div class="social" style="margin-bottom: 20px;">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/p/Masjid-Ar-Rahimah-Kg-Pandan-100066891233331/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            
+            <a href="http://www.youtube.com/@masjidarrahimahkgpandan9311" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
         </div>
         <p>&copy; 2026 Masjid Ar Rahimah Desa Pandan. All Rights Reserved.</p>
         <div class="footer-bottom">
@@ -129,20 +123,16 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT -->
     <script>
-        // Mobile Hamburger Menu
         function toggleMenu() { 
             document.getElementById("navMenu").classList.toggle("active"); 
         }
 
-        // Handle form submit function
         function handleFormSubmit() {
-            // Allow form to submit to iframe first
             setTimeout(function() {
                 alert("Thank you! Your feedback has been received.");
-                document.getElementById("feedbackForm").reset(); // Clear form
-            }, 1000); // Wait 1 second
+                document.getElementById("feedbackForm").reset(); 
+            }, 1000); 
         }
     </script>
 </body>
