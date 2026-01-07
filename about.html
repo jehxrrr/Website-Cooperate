@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Masjid Ar Rahimah</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Link CSS Luaran -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo" class="logo-img">
+                <div>
+                    <h1>Masjid Ar Rahimah</h1>
+                    <small>Desa Pandan, Kuala Lumpur</small>
+                </div>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+				<li><a href="donation.html">Donation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutme.html">Student Info</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ruang Kosong (Spacer) supaya tak tertutup dek header -->
+    <div style="height: 40px;"></div>
+
+    <div class="wrapper">
+        
+        <!-- Grid Utama: 4 Kotak (2x2) -->
+        <div class="about-grid">
+            
+            <!-- Kotak 1: Latar Belakang -->
+            <div class="about-card">
+                <h3>Background & History</h3>
+                <p>Masjid Ar Rahimah Desa Pandan serves as the community mosque for Muslims around Desa Pandan and nearby residential areas in Kuala Lumpur.</p>
+                <br>
+                <p>The mosque was established to provide a comfortable space for daily congregational prayers and Friday prayers, as well as serving as a center for religious learning that continues to grow alongside the rapid development of Desa Pandan.</p>
+            </div>
+
+            <!-- Kotak 2: Fakta Ringkas -->
+            <div class="about-card">
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li><strong>Location:</strong> Jalan 4/76B, Desa Pandan, 55100 Kuala Lumpur.</li>
+                    <li><strong>Category:</strong> Kariah Mosque (Federal Territory).</li>
+                    <li><strong>Capacity:</strong> Can accommodate up to 2,000 congregants.</li>
+                    <li><strong>Key Services:</strong> Daily Prayers, Friday Prayers, Religious Classes, Community Programs.</li>
+                </ul>
+            </div>
+
+            <!-- Kotak 3: Visi Misi -->
+            <div class="about-card">
+                <h3>Vision & Mission</h3>
+                <p><strong>Vision</strong><br>To become a prosperous, inclusive, and knowledge-based center of worship to strengthen faith and unity within the Desa Pandan community.</p>
+                <br>
+                <p><strong>Mission</strong></p>
+                <ul>
+                    <li>Provide quality facilities for worship and religious education.</li>
+                    <li>Organize continuous programs for youth, families, and senior citizens.</li>
+                    <li>Cultivate caring neighborhood values through community projects.</li>
+                </ul>
+            </div>
+
+            <!-- Kotak 4: Jawatankuasa -->
+            <div class="about-card">
+                <h3>Management Committee</h3>
+                <ul>
+                    <li><strong>Chairman:</strong> Tuan Haji Ahmad Bin Abdullah</li>
+                    <li><strong>Head Imam:</strong> Ustaz Muhammad Syafiq</li>
+                    <li><strong>Head of Da'wah Bureau:</strong> Ustaz Karim</li>
+                    <li><strong>Education Unit (KAFA):</strong> Hajah Rogayah</li>
+                    <li><strong>Welfare & Youth Unit:</strong> Encik Razak</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Grid Bawah (Fakta/Stats) - 3 Kolum -->
+        <div class="facts-grid">
+            <div class="fact-box">
+                <i class="fas fa-mosque fact-icon"></i>
+                <div>
+                    <h4>Center of Worship</h4>
+                    <p>Hosting daily congregational prayers, Friday prayers, Tarawih prayers, and Eid prayers.</p>
+                </div>
+            </div>
+            <div class="fact-box">
+                <i class="fas fa-users fact-icon"></i>
+                <div>
+                    <h4>Community Hub</h4>
+                    <p>A one-stop meeting center, resident briefings, and social engagement programs.</p>
+                </div>
+            </div>
+            <div class="fact-box">
+                <i class="fas fa-graduation-cap fact-icon"></i>
+                <div>
+                    <h4>Knowledge Center</h4>
+                    <p>Providing KAFA classes for children and daily religious lectures for adults.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content" style="margin-bottom: 20px;">
+            <strong>Masjid Ar Rahimah Desa Pandan</strong><br>
+            Jalan 4/76B, Desa Pandan, 55100 Kuala Lumpur.<br>
+            Email: <a href="mailto:admin@masjidarrahimah.com" style="color:#f1c40f;">admin@masjidarrahimah.com</a>
+        </div>
+        
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="aboutme.html">Developer Info (Student Profile)</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Masjid Ar Rahimah</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo" class="logo-img">
+                <div>
+                    <h1>Masjid Ar Rahimah</h1>
+                    <small>Desa Pandan, Kuala Lumpur</small>
+                </div>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="activities.html" class="active">Activities</a></li>
+				<li><a href="donation.html">Donation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutme.html">Student Info</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-hero">
+        <h2>Activities & Schedule</h2>
+        <p>Join our mosque enlivenment programs every week</p>
+    </div>
+
+    <div class="wrapper">
+        
+        <h2 class="section-title">Weekly Schedule</h2>
+        <div class="table-container">
+            <table class="schedule">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Activity</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Every Friday</td>
+                        <td>Friday Prayer & Sermon</td>
+                        <td>12:45 PM – 2:00 PM</td>
+                        <td>Main Prayer Hall</td>
+                    </tr>
+                    <tr>
+                        <td>Monday – Thursday</td>
+                        <td>Maghrib Lecture</td>
+                        <td>After Maghrib Prayer</td>
+                        <td>Main Prayer Hall</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday & Sunday</td>
+                        <td>KAFA Class (Children)</td>
+                        <td>8:00 AM - 11:00 AM</td>
+                        <td>Education Block</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Saturday (Monthly)</td>
+                        <td>Grand Qiamullail</td>
+                        <td>4:30 AM</td>
+                        <td>Main Prayer Hall</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">Special Programs</h2>
+        <!-- Used 'announce-grid' class to match styles.css if 'activities-grid' is not defined -->
+        <div class="announce-grid">
+            
+            <!-- Activity Card 1 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>KAFA Education</h3>
+                        <p>Children 7-12 Years Old</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Religious Class</h3>
+                        <p>Structured classes covering Al-Quran, Jawi, and Fardu Ain subjects for primary school students.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Card 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Health Program</h3>
+                        <p>Community Event</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Aafiyat Fest</h3>
+                        <p>Free health screenings and healthy lifestyle talks in collaboration with panel clinics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Card 3 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fas fa-praying-hands"></i>
+                        <h3>Ihya' Ramadan</h3>
+                        <p>Annual Event</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>The Holy Month</h3>
+                        <p>Tarawih prayers, Community Iftar, Quran recitation circles, and Bubur Lambuk distribution.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Note Box (Using style consistent with Contact page) -->
+        <div class="note-box-yellow" style="margin-top: 40px;">
+            <i class="fas fa-info-circle"></i>
+            <strong>Important Note:</strong> Dates and times of programs may change according to current circumstances. Please refer to the mosque notice board for updates.
+        </div>
+    </div>
+
+    <footer>
+        <div class="social" style="margin-bottom: 20px;">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2026 Masjid Ar Rahimah Desa Pandan. All Rights Reserved.</p>
+        <div class="footer-bottom">
+            <a href="aboutme.html">Developer Info (Student Profile)</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }
+    </script>
+</body>
+</html>
